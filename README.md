@@ -1,0 +1,8 @@
+Le projet RideauConnect vise à créer un système de rideaux automatisés doté d'un contrôle automatisé via une interface web dédiée appelée RideauConnect. L'interface web communique en temps réel avec le système de rideaux grâce au protocole MQTT, permettant ainsi à l'utilisateur de contrôler l'ouverture et la fermeture des rideaux à distance.
+
+L'interface web RideauConnect affiche diverses informations en temps réel, telles que le niveau d'ouverture ou de fermeture des rideaux exprimé en pourcentage. De plus, elle fournit des données sur la luminosité ambiante et la présence de personnes dans la pièce, permettant à l'utilisateur de prendre des décisions éclairées quant à l'état des rideaux.
+
+Le système propose deux modes de fonctionnement distincts. 
+Le mode manuel permet à l'utilisateur de prendre le contrôle direct des rideaux, en leur indiquant quand s'ouvrir ou se fermer et en définissant la durée de ces actions. En revanche, le mode automatique prend en compte les paramètres des capteurs de présence et de luminosité pour ajuster automatiquement l'ouverture ou la fermeture des rideaux en fonction des conditions ambiantes.
+
+Pour la mise en œuvre technique, le projet utilise Python avec Streamlit pour le développement de l'interface web. Du côté de l'embarqué, la plateforme Wokwi est employée, probablement pour la simulation ou l'émulation du matériel embarqué nécessaire au contrôle des rideaux automatisés. L'ensemble du système repose sur une architecture client-serveur utilisant le protocole MQTT pour assurer la communication en temps réel entre l'interface web et le système de rideaux automatisés.
